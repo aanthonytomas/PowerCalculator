@@ -1,0 +1,23 @@
+
+/* Custom styles if needed */
+.display {
+    font-size: 2em;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.calculator .buttons .btn{
+    display: inline-block;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calculator .buttons .dot {
+    height: 60px;
+}
+
+.btn {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    font-size: 20px; /* Adjust the font size as needed */
+}

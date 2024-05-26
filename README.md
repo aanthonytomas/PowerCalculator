@@ -10,11 +10,11 @@ A simple web-based calculator implemented with HTML, CSS, and JavaScript.
 
 ## Demo
 
-You can try out the calculator [here]([https://your-live-demo-link.com](https://aanthonytomas.github.io/PowerCalculator/)).
+You can try out the calculator [here](https://aanthonytomas.github.io/PowerCalculator/).
 
 ## Screenshots
 
-![image](https://github.com/aanthonytomas/PowerCalculator/assets/92261282/508709cc-666f-4fb2-b0c1-0e0d148b482c)
+<img src="https://github.com/aanthonytomas/PowerCalculator/assets/92261282/508709cc-666f-4fb2-b0c1-0e0d148b482c" width="300" alt="Calculator Screenshot">
 
 
 ## Installation

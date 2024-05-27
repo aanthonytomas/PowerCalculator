@@ -1,4 +1,4 @@
-# Calculator Web App
+# PowerCalculator
 
 A simple web-based calculator implemented with HTML, CSS, and JavaScript.
 
@@ -21,11 +21,11 @@ You can try out the calculator [here](https://aanthonytomas.github.io/PowerCalcu
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/calculator-web-app.git
+    git clone https://github.com/yourusername/PowerCalculator.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd calculator-web-app
+    cd PowerCalculator
     ```
 3. Open `index.html` in your preferred web browser:
     ```bash

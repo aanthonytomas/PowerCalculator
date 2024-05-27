@@ -1,6 +1,6 @@
 # PowerCalculator
 
-A simple web-based calculator implemented with HTML, CSS, and JavaScript.
+A simple web-based calculator implemented with HTML, CSS, JavaScript and Bootsrap as Framework.
 
 ## Features
 

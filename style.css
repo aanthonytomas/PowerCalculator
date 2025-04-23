@@ -1,23 +1,207 @@
+/* Global Variables */
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+  --white-color: #ffffff;
+  --transition-speed: 0.3s;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+  --border-radius: 0.5rem;
+  --calculator-width: 320px;
+}
 
-/* Custom styles if needed */
+/* Dark Mode Variables */
+.dark-mode {
+  --primary-color: #3d8bfd;
+  --secondary-color: #8c959e;
+  --warning-color: #ffca2c;
+  --danger-color: #ff6b6b;
+  --light-color: #2c3034;
+  --dark-color: #f8f9fa;
+  --white-color: #1e2125;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
+}
+
+/* Base Styles */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background var(--transition-speed);
+}
+
+.dark-mode body {
+  background: linear-gradient(135deg, #2b2d3e, #1a1b26);
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Layout */
+main {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+.calculator-container {
+  width: 100%;
+  max-width: var(--calculator-width);
+  margin: 2rem auto;
+}
+
+/* Calculator */
+.calculator {
+  width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: background-color var(--transition-speed), box-shadow var(--transition-speed);
+  overflow: hidden;
+}
+
+.dark-mode .calculator {
+  background-color: var(--white-color) !important;
+}
+
+/* Display */
 .display {
-    font-size: 2em;
-    height: 60px;
-    margin-bottom: 10px;
+  height: 80px;
+  font-size: 2.5rem;
+  font-weight: 300;
+  overflow-x: auto;
+  white-space: nowrap;
+  border-radius: var(--border-radius) !important;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
 }
 
-.calculator .buttons .btn{
-    display: inline-block;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+.dark-mode .display {
+  background-color: #343a40 !important;
+  color: #fff !important;
 }
 
-.calculator .buttons .dot {
-    height: 60px;
+.calculator-history {
+  height: 24px;
+  text-align: right;
+  padding-right: 0.5rem;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
-.btn {
-    width: 50px; /* Adjust the width as needed */
-    height: 50px; /* Adjust the height as needed */
-    font-size: 20px; /* Adjust the font size as needed */
+/* Buttons */
+.buttons .btn {
+  border-radius: 50%;
+  font-size: 1.25rem;
+  height: 60px;
+  transition: all var(--transition-speed);
+  position: relative;
+  overflow: hidden;
+}
+
+.buttons .row:last-child .btn[data-value="0"] {
+  border-radius: 30px;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s;
+}
+
+.btn:active::after {
+  width: 200%;
+  height: 200%;
+}
+
+/* Button Colors */
+.btn-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--light-color);
+}
+
+.btn-warning {
+  background-color: var(--warning-color);
+  border-color: var(--warning-color);
+  color: var(--dark-color);
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--light-color);
+  font-weight: bold;
+}
+
+.btn-outline-danger {
+  color: var(--danger-color);
+  border-color: var(--danger-color);
+}
+
+.btn-outline-secondary {
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+/* Button Hover Effects */
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .calculator-container {
+    padding: 0 15px;
+  }
+  
+  .buttons .btn {
+    height: 55px;
+    font-size: 1.1rem;
+  }
+  
+  .display {
+    height: 70px;
+    font-size: 2rem;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+footer a {
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.dark-mode footer {
+  background-color: rgba(255, 255, 255, 0.05);
 }

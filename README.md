@@ -12,7 +12,7 @@ A simple web-based calculator implemented with HTML, CSS, JavaScript and Bootsra
 
 You can try out the calculator [here](https://aanthonytomas.github.io/PowerCalculator/).
 
-## Screenshots
+## Preview
 
 <img src="https://github.com/aanthonytomas/PowerCalculator/assets/92261282/508709cc-666f-4fb2-b0c1-0e0d148b482c" width="450" alt="Calculator Screenshot">
 

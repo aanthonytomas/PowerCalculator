@@ -1,49 +1,50 @@
-# PowerCalculator
+# Power Calculator
 
-A simple web-based calculator implemented with HTML, CSS, JavaScript and Bootsrap as Framework.
+Power Calculator is a simple web application built using HTML, CSS, and JavaScript. It allows users to calculate the power of a number by raising it to a specified exponent.
 
 ## Features
 
-- Basic arithmetic operations: addition, subtraction, multiplication, and division.
-- Clear (C) button to reset the calculator.
-- Responsive design using Bootstrap for a sleek and modern look.
+- User-friendly interface.
+- Instant power calculations.
+- Responsive design for compatibility across devices.
 
-## Demo
+## Getting Started
 
-You can try out the calculator [here](https://aanthonytomas.github.io/PowerCalculator/).
+To use the Power Calculator:
 
-## Preview
-
-<img src="https://github.com/aanthonytomas/PowerCalculator/assets/92261282/508709cc-666f-4fb2-b0c1-0e0d148b482c" width="450" alt="Calculator Screenshot">
-
-
-## Installation
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/PowerCalculator.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd PowerCalculator
-    ```
-3. Open `index.html` in your preferred web browser:
-    ```bash
-    open index.html
-    ```
+1. Clone the repository or download the files.
+2. Open the `index.html` file in your browser.
+3. Enter a number and an exponent, then click "Calculate" to see the result.
 
 ## Usage
 
-- Click on the buttons to perform arithmetic operations.
-- Use the clear (C) button to reset the calculator.
-- The current operation and result will be displayed on the screen.
+1. Input the base number.
+2. Input the exponent.
+3. Press the calculate button to see the power result.
 
-## Files
+## Technologies Used
 
-- `index.html`: The main HTML file that contains the structure of the calculator.
-- `script.js`: The JavaScript file that handles the calculator logic.
-- `styles.css`: The CSS file for additional custom styling (if any).
+- **HTML**: For the structure of the web application.
+- **CSS**: For styling the application.
+- **JavaScript**: For implementing the calculation logic.
 
+## License
 
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Author
+
+**Mark Anthony Tomas**
+
+- **LinkedIn**: [linkedin.com/in/aanthonytomas](https://linkedin.com/in/aanthonytomas)
+- Feel free to contact me for any inquiries or collaborations.
+
+## Contributing
+
+Contributions are welcome! If you'd like to improve this project, please fork the repository and submit a pull request.
+
+## Acknowledgments
+
+Thanks to everyone who supports open-source projects!
 
 
